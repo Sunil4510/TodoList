@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:rgb(116, 56, 212)
+}
+
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.child figcaption{
+    font-size: 30px;
+    font-weight: 800;
+}
+.addItems{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border:1px solid gray;
+    padding: 2px;
+    background: whitesmoke;
+    border-radius: 12px;
+}
+.addItems input{
+    border:none;
+    outline: none;
+    background: whitesmoke;
+    height: 30px;
+    width: 230px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.addItems i{
+    background: whitesmoke;
+    margin: 7px;
+}
+.addItems i:hover{
+    color: rgb(149, 245, 6);
+}
+
+.data{
+    background: none;
+    width: 228px;
+}
+.todo-btn{
+    background: none;
+}
+#del{
+    cursor: pointer;
+
+}
+#del:hover{
+    color: red;
+}
+
+.remove{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+   
+}
+.clear{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 0 rgb(60, 248, 3),-2px -2px 6px 0 rgb(245, 221, 2);
+    background: whitesmoke;
+    width: 100px;
+    height: 30px;
+}
+.check{
+    background: none;
+    font-size: 13px;
+    font-weight: 800;
+}
+.check:hover{
+    color: tomato;
+    font-size: 15px;
+}
+@media only screen and (max-width: 310px) {
+    .child figcaption{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    .addItems input{
+        width: 100px;
+        font-size: 10px;
+    }
+    .addItems{
+        width: 135px;
+    }
+}
